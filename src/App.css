@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.addtodo {
+  width: 90%;
+  margin: 10px auto;
+  background-color: rgb(247, 247, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 30px 0 30px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addtodo form {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addtodo input {
+  width: 300px;
+  outline: 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addtodo button {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: 0;
+  cursor: pointer;
+}
+
+.todolist {
+  width: 90%;
+  margin: 10px auto;
+  background-color: rgb(247, 247, 245);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.todopart {
+  width: 800px;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px 0 15px 0;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todopart span,
+.completed span {
+  width: 60%;
+  /* background-color: #ccc; */
+}
+
+.todopart button,
+.completed button {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: 0;
+  cursor: pointer;
+}
+
+.completed {
+  opacity: 0.5;
+  width: 800px;
+  padding: 10px;
+  background-color: rgb(177, 170, 170);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px 0 15px 0;
+  margin-top: 10px;
+  text-decoration: line-through;
+}
+
+.uncomp{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px 0;
+    border-radius: 30px 0 30px 0;
+}
+.uncomp span,
+.uncomp p{
+    background-color: rgb(252, 248, 248);
+    width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(248, 247, 248);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+select{
+    width: 200px;
+    outline: none;
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
 }
